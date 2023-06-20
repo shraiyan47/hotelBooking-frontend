@@ -4,7 +4,7 @@ import "./featuredProperties.css";
 const FeaturedProperties = () => {
 
   // eslint-disable-next-line
-  const { data, loading, error } = useFetch("/hotels?featured=true&limits=3")
+  const { data, loading, error } = useFetch("/hotels?featured=true")
   console.log(data)
 
   return (
