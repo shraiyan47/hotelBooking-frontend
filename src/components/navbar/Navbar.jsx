@@ -16,7 +16,7 @@ const Navbar = () => {
     <div className="navbar">
       <div className="navContainer">
         <Link to={"/"} style={{ color: "inherit", textDecoration: "none" }}>
-          <span className="logo">lamabooking</span>
+          <span className="logo">Star Hotel Booking</span>
         </Link>
         {
           user ?
@@ -29,7 +29,7 @@ const Navbar = () => {
             :
             <div className="navItems">
               <button className="navButton">Register</button>
-              <button className="navButton">Login</button>
+              <button className="navButton" onClick={logoutHandler}>Login</button>
             </div>
         }
       </div>
